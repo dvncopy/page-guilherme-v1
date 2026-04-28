@@ -13,8 +13,8 @@
   --wine: #420000;
   --white: #ffffff;
   --gray-text: #bebebe;
-  --font-heading: 'Arial Narrow', 'Segoe UI', Arial, sans-serif;
-  --font-body: 'Segoe UI', Arial, sans-serif;
+  --font-heading: 'Sora', sans-serif;
+  --font-body: 'Inter', sans-serif;
   --max-w: 1140px;
   --content-w: 645px;
 }
