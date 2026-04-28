@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Participe do Workshop Criativos que Escalam e aprenda, em 2 dias ao vivo e online, a criar anúncios que convertem público frio e escalam múltiplos 6 dígitos.">
   <title>Workshop Criativos que Escalam | 1ª Edição</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@200;300;400;500;600;700;800&family=Inter:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <link rel="preload" as="style" href="style.css" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet" href="style.css">
+  </noscript>
 </head>
 <body>
 
@@ -18,13 +18,34 @@
      bg: #000 + imagem de fundo
      ============================================== -->
 <section class="sec-hero e-con-boxed">
+  <picture class="hero-bg-media">
+    <source
+      media="(max-width: 767px)"
+      srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fhero-bg-mobile.webp&w=768&q=72 768w, /_vercel/image?url=%2Fassets%2Fimages%2Fhero-bg-mobile.webp&w=1080&q=72 1080w"
+      sizes="100vw"
+    >
+    <img
+      class="hero-bg-img"
+      src="/_vercel/image?url=%2Fassets%2Fimages%2Fhero-bg-desktop.webp&w=1600&q=72"
+      srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fhero-bg-desktop.webp&w=1280&q=72 1280w, /_vercel/image?url=%2Fassets%2Fimages%2Fhero-bg-desktop.webp&w=1600&q=72 1600w, /_vercel/image?url=%2Fassets%2Fimages%2Fhero-bg-desktop.webp&w=1920&q=72 1920w"
+      sizes="100vw"
+      alt=""
+      fetchpriority="high"
+      decoding="async"
+      width="1600"
+      height="900"
+    >
+  </picture>
   <div class="e-con-inner">
 
     <img
       class="hero-logo"
-      src="assets/images/hero-banner.webp"
+      src="/_vercel/image?url=%2Fassets%2Fimages%2Fhero-banner.webp&w=320&q=72"
+      srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fhero-banner.webp&w=260&q=72 260w, /_vercel/image?url=%2Fassets%2Fimages%2Fhero-banner.webp&w=320&q=72 320w, /_vercel/image?url=%2Fassets%2Fimages%2Fhero-banner.webp&w=520&q=72 520w"
+      sizes="(max-width: 767px) 40vw, 20vw"
       alt="Workshop"
       fetchpriority="high"
+      decoding="async"
       width="666" height="375"
     >
 
@@ -67,35 +88,35 @@
 
   <div class="marquee-outer">
     <div class="marquee-track">
-      <figure><img src="assets/images/player-1.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-2.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-3.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-4.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-5.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-6.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-7.webp" alt="player" loading="lazy" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
       <!-- duplicado para loop contínuo -->
-      <figure><img src="assets/images/player-1.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-2.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-3.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-4.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-5.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-6.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-7.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-1.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-2.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-3.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-4.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-5.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-6.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-7.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-1.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-2.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-3.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-4.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-5.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-6.webp" alt="player" loading="lazy" height="120"></figure>
-      <figure><img src="assets/images/player-7.webp" alt="player" loading="lazy" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
+      <figure><img src="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=240&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=240&q=70 240w, /_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=480&q=70 480w" sizes="240px" alt="player" loading="lazy" decoding="async" width="240" height="120"></figure>
     </div>
   </div>
 </section>
@@ -111,7 +132,7 @@
       <div class="e-col spacer"></div>
 
       <div class="e-col problema-img-col">
-        <img src="assets/images/problema.webp" alt="Workshop criativos" loading="lazy">
+        <img src="/_vercel/image?url=%2Fassets%2Fimages%2Fproblema.webp&w=700&q=70" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fproblema.webp&w=420&q=70 420w, /_vercel/image?url=%2Fassets%2Fimages%2Fproblema.webp&w=700&q=70 700w, /_vercel/image?url=%2Fassets%2Fimages%2Fproblema.webp&w=900&q=72 900w" sizes="(max-width: 767px) calc(100vw - 40px), 50vw" alt="Workshop criativos" loading="lazy" decoding="async" width="1080" height="1350">
       </div>
 
       <div class="e-col problema-text-col">
@@ -136,7 +157,7 @@
 <section class="sec-prova e-con-boxed">
   <div class="e-con-inner">
 
-    <img class="prova-logo" src="assets/images/prova-80-20.webp" alt="" loading="lazy">
+    <img class="prova-logo" src="/_vercel/image?url=%2Fassets%2Fimages%2Fprova-80-20.webp&w=96&q=72" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fprova-80-20.webp&w=78&q=72 78w, /_vercel/image?url=%2Fassets%2Fimages%2Fprova-80-20.webp&w=156&q=72 156w" sizes="(max-width: 767px) 12vw, 5vw" alt="" loading="lazy" decoding="async" width="500" height="500">
 
     <h2 class="prova-h2-orange">
       <span class="prova-headline-line">Em 2026, o criativo</span>
@@ -150,8 +171,8 @@
     <h2 class="prova-h2-white" style="margin:20px 0 20px;">E esse não foi um <b>caso isolado...</b></h2>
 
     <div class="prova-img-grid">
-      <img src="assets/images/prova-3.webp" alt="Resultado" loading="lazy">
-      <img src="assets/images/prova-4.webp" alt="Resultado" loading="lazy">
+      <img src="/_vercel/image?url=%2Fassets%2Fimages%2Fprova-3.webp&w=312&q=72" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fprova-3.webp&w=312&q=72 312w, /_vercel/image?url=%2Fassets%2Fimages%2Fprova-3.webp&w=624&q=72 624w" sizes="(max-width: 767px) calc(50vw - 24px), 312px" alt="Resultado" loading="lazy" decoding="async" width="500" height="500">
+      <img src="/_vercel/image?url=%2Fassets%2Fimages%2Fprova-4.webp&w=312&q=72" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Fprova-4.webp&w=312&q=72 312w, /_vercel/image?url=%2Fassets%2Fimages%2Fprova-4.webp&w=624&q=72 624w" sizes="(max-width: 767px) calc(50vw - 24px), 312px" alt="Resultado" loading="lazy" decoding="async" width="500" height="500">
     </div>
 
     <h2 class="prova-h2-white" style="margin:30px 0 30px;">Não importa o nicho, não importa o funil... <b>criativo muda o jogo!</b></h2>
@@ -380,7 +401,7 @@
 
     <!-- Card de oferta (bg #000, border-radius 38px) -->
     <div class="offer-card">
-      <img class="offer-card-img" src="assets/images/oferta-banner.webp" alt="Workshop Criativos que Escalam" loading="lazy">
+      <img class="offer-card-img" src="/_vercel/image?url=%2Fassets%2Fimages%2Foferta-banner.webp&w=470&q=72" srcset="/_vercel/image?url=%2Fassets%2Fimages%2Foferta-banner.webp&w=470&q=72 470w, /_vercel/image?url=%2Fassets%2Fimages%2Foferta-banner.webp&w=940&q=72 940w" sizes="(max-width: 767px) 72vw, 470px" alt="Workshop Criativos que Escalam" loading="lazy" decoding="async" width="2000" height="590">
 
       <p class="offer-content"><b>Veja o que você recebe:</b><br>
 <br>✦ 16 horas de Conteúdo<br>
@@ -522,7 +543,7 @@ E agora quero te ensinar também.</h2>
 <div class="modal-overlay" id="modalOverlay" onclick="closeModalOutside(event)">
   <div class="modal-wrapper">
     <div class="modal">
-      <img src="assets/images/oferta-banner.webp" alt="Workshop Criativos que Escalam">
+      <img id="modalOfferImg" data-src="/_vercel/image?url=%2Fassets%2Fimages%2Foferta-banner.webp&w=940&q=72" alt="Workshop Criativos que Escalam" loading="lazy" decoding="async" width="2000" height="590">
       <div class="modal-body">
         <h3>Garantir minha vaga por R$&nbsp;19</h3>
         <input type="email" class="form-field" id="formEmail" placeholder="Seu melhor e-mail" required autocomplete="email">
@@ -541,6 +562,10 @@ E agora quero te ensinar também.</h2>
 <script>
   // --- Modal ---
   function openModal() {
+    var modalImg = document.getElementById('modalOfferImg');
+    if (modalImg && !modalImg.getAttribute('src')) {
+      modalImg.setAttribute('src', modalImg.getAttribute('data-src'));
+    }
     document.getElementById('modalOverlay').classList.add('active');
     document.body.style.overflow = 'hidden';
   }

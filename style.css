@@ -13,8 +13,8 @@
   --wine: #420000;
   --white: #ffffff;
   --gray-text: #bebebe;
-  --font-heading: 'Sora', sans-serif;
-  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Arial Narrow', 'Segoe UI', Arial, sans-serif;
+  --font-body: 'Segoe UI', Arial, sans-serif;
   --max-w: 1140px;
   --content-w: 645px;
 }
@@ -202,14 +202,29 @@ s { text-decoration-color: var(--orange); }
    Background: #000 + image
    ============================================= */
 .sec-hero {
+  position: relative;
   background-color: #000;
-  background-image: url('assets/images/hero-bg-desktop.webp');
-  background-size: cover;
-  background-position: center top;
+  overflow: hidden;
   padding: 40px 0 50px;
 }
 
+.hero-bg-media {
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+
+.hero-bg-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
+
 .sec-hero .e-con-inner {
+  position: relative;
+  z-index: 1;
   max-width: 1280px;
   display: flex;
   flex-direction: column;
@@ -220,6 +235,8 @@ s { text-decoration-color: var(--orange); }
 
 .hero-logo {
   width: 20%;
+  aspect-ratio: 666 / 375;
+  height: auto;
   margin: 10px auto -10px;
 }
 
@@ -369,6 +386,7 @@ s { text-decoration-color: var(--orange); }
 .marquee-track figure img {
   height: 120px;
   width: auto;
+  aspect-ratio: 2 / 1;
   object-fit: contain;
   border-radius: 6px;
 }
@@ -394,6 +412,8 @@ s { text-decoration-color: var(--orange); }
 
 .problema-img-col img {
   width: 100%;
+  aspect-ratio: 1080 / 1350;
+  height: auto;
 }
 
 .problema-text-col {
@@ -447,6 +467,8 @@ s { text-decoration-color: var(--orange); }
 
 .prova-logo {
   width: 5%;
+  aspect-ratio: 1 / 1;
+  height: auto;
   margin: -21px auto 0;
 }
 
@@ -489,7 +511,7 @@ s { text-decoration-color: var(--orange); }
   max-width: 980px;
 }
 
-.prova-img-grid img { width: 100%; border-radius: 8px; }
+.prova-img-grid img { width: 100%; aspect-ratio: 1 / 1; height: auto; object-fit: cover; border-radius: 8px; }
 
 /* =============================================
    SECTION 5 — METODOLOGIA
@@ -905,6 +927,9 @@ s { text-decoration-color: var(--orange); }
 
 .offer-card-img {
   width: 72%;
+  aspect-ratio: 2000 / 590;
+  height: auto;
+  object-fit: contain;
   margin: 16px auto 4px;
 }
 
@@ -1367,12 +1392,6 @@ footer p {
 @media (max-width: 767px) {
 
   /* Hero */
-  .sec-hero {
-    background-image: url('assets/images/hero-bg-mobile.webp');
-    background-size: cover;
-    background-position: center top;
-  }
-
   .hero-logo { width: 40%; }
 
   .hero-h1 {
