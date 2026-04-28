@@ -765,6 +765,7 @@ s { text-decoration-color: var(--orange); }
 
 .carousel-viewport {
   overflow: hidden;
+  touch-action: pan-y;
 }
 
 .carousel-track {
