@@ -14,9 +14,9 @@
   <link rel="preload" as="image" href="assets/images/hero-bg-mobile.webp" media="(max-width: 767px)">
   <link rel="preload" as="image" href="assets/images/hero-banner.webp" fetchpriority="high">
 
-  <link rel="preload" as="style" href="style.css" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" as="style" href="style.css?v=20260428" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260428">
   </noscript>
 </head>
 <body>
@@ -26,11 +26,28 @@
      bg: #000 + imagem de fundo
      ============================================== -->
 <section class="sec-hero e-con-boxed">
+  <picture class="hero-bg-media">
+    <source
+      media="(max-width: 767px)"
+      srcset="assets/images/hero-bg-mobile.webp"
+    >
+    <img
+      class="hero-bg-img"
+      src="assets/images/hero-bg-desktop.webp"
+      alt=""
+      fetchpriority="high"
+      decoding="async"
+      width="1600"
+      height="900"
+    >
+  </picture>
   <div class="e-con-inner">
 
     <img
       class="hero-logo"
       src="assets/images/hero-banner.webp"
+      srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fhero-banner.webp&w=260&q=72 260w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fhero-banner.webp&w=520&q=72 520w"
+      sizes="(max-width: 767px) 40vw, 260px"
       alt="Workshop"
       fetchpriority="high"
       width="666" height="375"
@@ -75,35 +92,35 @@
 
   <div class="marquee-outer">
     <div class="marquee-track">
-      <figure><img src="assets/images/player-1.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-2.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-3.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-4.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-5.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-6.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-7.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-1.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-2.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-3.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-4.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-5.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-6.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-7.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
       <!-- duplicado para loop contínuo -->
-      <figure><img src="assets/images/player-1.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-2.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-3.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-4.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-5.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-6.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-7.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-1.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-2.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-3.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-4.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-5.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-6.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-7.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-1.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-2.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-3.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-4.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-5.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-6.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
-      <figure><img src="assets/images/player-7.webp" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-1.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-2.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-3.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-4.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-5.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-6.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-7.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-1.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-2.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-3.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-4.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-5.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-6.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-7.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-1.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-1.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-2.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-2.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-3.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-3.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-4.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-4.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-5.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-5.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-6.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-6.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
+      <figure><img src="assets/images/player-7.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=420&q=72 420w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fplayer-7.webp&w=840&q=72 840w" sizes="420px" alt="player" loading="lazy" decoding="async" width="1000" height="500"></figure>
     </div>
   </div>
 </section>
@@ -119,7 +136,7 @@
       <div class="e-col spacer"></div>
 
       <div class="e-col problema-img-col">
-        <img src="assets/images/problema.webp" alt="Workshop criativos" loading="lazy" decoding="async" width="1080" height="1350">
+        <img src="assets/images/problema.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fproblema.webp&w=651&q=72 651w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fproblema.webp&w=900&q=72 900w" sizes="(max-width: 767px) calc(100vw - 40px), 651px" alt="Workshop criativos" loading="lazy" decoding="async" width="1080" height="1350">
       </div>
 
       <div class="e-col problema-text-col">
@@ -144,7 +161,7 @@
 <section class="sec-prova e-con-boxed">
   <div class="e-con-inner">
 
-    <img class="prova-logo" src="assets/images/prova-80-20.webp" alt="" loading="lazy" decoding="async" width="500" height="500">
+    <img class="prova-logo" src="assets/images/prova-80-20.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fprova-80-20.webp&w=78&q=72 78w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fprova-80-20.webp&w=156&q=72 156w" sizes="(max-width: 767px) 12vw, 78px" alt="" loading="lazy" decoding="async" width="500" height="500">
 
     <h2 class="prova-h2-orange">
       <span class="prova-headline-line">Em 2026, o criativo</span>
@@ -158,8 +175,8 @@
     <h2 class="prova-h2-white" style="margin:20px 0 20px;">E esse não foi um <b>caso isolado...</b></h2>
 
     <div class="prova-img-grid">
-      <img src="assets/images/prova-3.webp" alt="Resultado" loading="lazy" decoding="async" width="500" height="500">
-      <img src="assets/images/prova-4.webp" alt="Resultado" loading="lazy" decoding="async" width="500" height="500">
+      <img src="assets/images/prova-3.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fprova-3.webp&w=312&q=72 312w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fprova-3.webp&w=624&q=72 624w" sizes="(max-width: 767px) calc(50vw - 24px), 312px" alt="Resultado" loading="lazy" decoding="async" width="500" height="500">
+      <img src="assets/images/prova-4.webp" srcset="https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fprova-4.webp&w=312&q=72 312w, https://page-guilherme-v1.vercel.app/_vercel/image?url=%2Fassets%2Fimages%2Fprova-4.webp&w=624&q=72 624w" sizes="(max-width: 767px) calc(50vw - 24px), 312px" alt="Resultado" loading="lazy" decoding="async" width="500" height="500">
     </div>
 
     <h2 class="prova-h2-white" style="margin:30px 0 30px;">Não importa o nicho, não importa o funil... <b>criativo muda o jogo!</b></h2>
@@ -584,16 +601,19 @@ E agora quero te ensinar também.</h2>
     var current = 0;
     var slides = track.querySelectorAll('figure');
     var total = slides.length;
+    var slideStride = 0;
 
     function isMobile() { return window.innerWidth < 480; }
     function visible() { return isMobile() ? 1 : 2; }
     function maxIdx() { return Math.max(0, total - visible()); }
+    function measure() {
+      if (!slides.length) return;
+      slideStride = slides[0].getBoundingClientRect().width + 18;
+    }
 
     function go(idx) {
       current = Math.max(0, Math.min(idx, maxIdx()));
-      var slideW = slides[0].offsetWidth;
-      var gap = 18;
-      track.style.transform = 'translateX(-' + (current * (slideW + gap)) + 'px)';
+      track.style.transform = 'translateX(-' + (current * slideStride) + 'px)';
       if (prev) prev.style.opacity = current === 0 ? '0.3' : '1';
       if (next) next.style.opacity = current >= maxIdx() ? '0.3' : '1';
     }
@@ -606,7 +626,10 @@ E agora quero te ensinar também.</h2>
 
     function scheduleGo() {
       if (resizeRaf !== null) cancelAnimationFrame(resizeRaf);
-      resizeRaf = requestAnimationFrame(function () { go(0); });
+      resizeRaf = requestAnimationFrame(function () {
+        measure();
+        go(0);
+      });
     }
 
     function startAutoplay() {
@@ -622,6 +645,7 @@ E agora quero te ensinar também.</h2>
       autoplayId = null;
     }
 
+    measure();
     go(0);
     window.addEventListener('resize', scheduleGo);
     document.addEventListener('visibilitychange', function () {
