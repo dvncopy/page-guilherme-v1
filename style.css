@@ -1487,7 +1487,9 @@ footer p {
   /* Resultados */
   .res-h2 { font-size: 28px; margin: 10px 5px; line-height: 1.08; letter-spacing: 0; }
   .res-headline-line { display: inline; white-space: normal; }
-  .carousel-track figure { flex: 0 0 80%; }
+  .carousel-box { padding: 0 16px; }
+  .carousel-track { gap: 14px; }
+  .carousel-track figure { flex: 0 0 92%; }
   .carousel-arrows { display: none; }
 
   /* Participar */
@@ -1582,6 +1584,8 @@ footer p {
 }
 
 @media (max-width: 480px) {
+  .carousel-box { padding: 0 12px; }
+  .carousel-track figure { flex: 0 0 94%; }
   .offer-price-value { font-size: 70px; }
   .hero-cta-wrap { margin: 24px 0 0; }
   .hero-progress-wrap {

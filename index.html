@@ -660,7 +660,9 @@ E agora quero te ensinar também.</h2>
     function maxIdx() { return Math.max(0, total - visible()); }
     function measure() {
       if (!slides.length) return;
-      slideStride = slides[0].getBoundingClientRect().width + 18;
+      var trackStyles = window.getComputedStyle(track);
+      var gap = parseFloat(trackStyles.gap || trackStyles.columnGap || '0') || 0;
+      slideStride = slides[0].getBoundingClientRect().width + gap;
     }
 
     function go(idx) {
