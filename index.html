@@ -635,12 +635,26 @@ E agora quero te ensinar também.</h2>
   document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') closeModal();
   });
+  var SUPABASE_URL = 'https://wtifqicsvtjtlozntubp.supabase.co';
+  var SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind0aWZxaWNzdnRqdGxvem50dWJwIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc1Mjg2MzQsImV4cCI6MjA5MzEwNDYzNH0.Q8VclctSDM2cMjfMJSRlE3h0X-LFZMnordt5b3Z7LzM';
+
   function submitForm() {
     var email = document.getElementById('formEmail').value.trim();
     var phone = document.getElementById('formPhone').value.trim();
     if (!email || !phone) { alert('Preencha e-mail e WhatsApp para continuar.'); return; }
-    // TODO: substituir pela URL de checkout real (ex: Hotmart, Kiwify)
-    window.location.href = 'https://wa.me/5548996649920?text=Quero%20garantir%20minha%20vaga%20no%20Workshop!';
+
+    fetch(SUPABASE_URL + '/rest/v1/leads', {
+      method: 'POST',
+      headers: {
+        'apikey': SUPABASE_KEY,
+        'Authorization': 'Bearer ' + SUPABASE_KEY,
+        'Content-Type': 'application/json',
+        'Prefer': 'return=minimal'
+      },
+      body: JSON.stringify({ email: email, whatsapp: phone })
+    }).finally(function () {
+      window.location.href = 'https://pay.onprofit.com.br/FQRSa2j9?off=Nr7IFl';
+    });
   }
 
   // --- Carousel de Resultados ---
